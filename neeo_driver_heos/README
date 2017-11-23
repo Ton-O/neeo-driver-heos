@@ -22,6 +22,7 @@ const TYPES = [
 
 Step 2
 Start the Driver
+
 Note: It can happen that the Driver does not discover the Brain or at least one Speaker. In that case, please restart the Driver until you get the "READY!" message and at least one disvocered Device.
 Discovered Devices look like this:
 
@@ -33,7 +34,21 @@ Discovered Device:  { friendlyName: 'Wohnzimmer',
   address: '192.168.1.12',
   instance: '192.168.1.12' }
 
-
 Note2: If you have Problems discovering the Brain, just set your BrainIP in the Config and toggle comments on index.js Line 66 & 67
 
+Step 3
+Add the Device in Neeo
+
+Step 4
+Set the Recipe from the new Device to "On" and choose "Show on Homescreen"
+
+Step 5
+Start the Recipe and add the following Shortcuts:
+Transport
+Cover
+Now Playing
+Skip Backward
+Skip Forward
+
+Step 6
 Have Fun!

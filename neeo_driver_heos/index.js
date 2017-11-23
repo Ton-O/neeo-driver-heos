@@ -26,9 +26,7 @@ const discoveryInstructions = {
   .setManufacturer('Denon')
   .addAdditionalSearchToken('foo')
   .setType('AUDIO')
-  .addTextLabel({ name: 'artistLabel', label: 'Artist' }, controller.getArtist)
-  .addTextLabel({ name: 'songLabel', label: 'Song' }, controller.getSong)
-  .addTextLabel({ name: 'albumLabel', label: 'Album' }, controller.getAlbum)
+  .addTextLabel({ name: 'nowPlaying', label: 'Now Playing' }, controller.getNowPlaying)
   .addImageUrl({ name: 'albumcover', label: 'Cover', size: 'small' },controller.getImageUri)
   .registerSubscriptionFunction(controller.registerStateUpdateCallback)
   .enableDiscovery(discoveryInstructions, controller.discoverHeosPlayers);

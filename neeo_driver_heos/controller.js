@@ -44,16 +44,11 @@ module.exports.heosDeviceButtonPressed = function heosDevicesButtonPressed(name,
 		sendPlayerCommand(name,deviceid);
 }
 
-module.exports.getArtist = function(deviceid) {
-	return heosPlayers.find(o => o.pid === parseInt(deviceid)).artist;
-}
-
-module.exports.getSong = function(deviceid) {
-	return heosPlayers.find(o => o.pid === parseInt(deviceid)).song;
-}
-
-module.exports.getAlbum = function(deviceid) {
-	return heosPlayers.find(o => o.pid === parseInt(deviceid)).album;
+module.exports.getNowPlaying = function(deviceid) {
+	var nowPlaying = "'"+heosPlayers.find(o => o.pid === parseInt(deviceid)).song;
+	nowPlaying = nowPlaying+"' by '"+heosPlayers.find(o => o.pid === parseInt(deviceid)).artist;
+	nowPlaying = nowPlaying+"' from the Album '"+heosPlayers.find(o => o.pid === parseInt(deviceid)).album+"'";
+	return nowPlaying;
 }
 
 module.exports.getImageUri = function(deviceid) {
@@ -185,9 +180,7 @@ function setPlayerMedia(playerID,data){
 			player.song=data.song;
 			player.album=data.album;
 			player.image_url=data.image_url;
-			sendComponentUpdate({ uniqueDeviceId: playerID, component:'artistLabel', value: data.artist });
-			sendComponentUpdate({ uniqueDeviceId: playerID, component:'artistSong', value: data.song });
-			sendComponentUpdate({ uniqueDeviceId: playerID, component:'artistAlbum', value: data.album });
+			sendComponentUpdate({ uniqueDeviceId: playerID, component:'nowPlaying', value: "'"+data.song+"' by '"+data.artist+"' from the Album '"+data.album+"'" });
 			sendComponentUpdate({ uniqueDeviceId: playerID, component:'albumcover', value: data.image_url });
 }
 
