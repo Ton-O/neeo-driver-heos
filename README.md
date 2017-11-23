@@ -19,7 +19,8 @@ const TYPES = [
 ];
 
 
-Step 2
+Step 2 
+Start the Driver
 Note: It can happen that the Driver does not discover the Brain or at least one Speaker. In that case, please restart the Driver until you get the "READY!" message and at least one disvocered Device.
 Discovered Devices look like this:
 
