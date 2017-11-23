@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "node-ssdp-lite",
+        "scope": null,
+        "escapedName": "node-ssdp-lite",
+        "name": "node-ssdp-lite",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\busa\\node_modules"
+    ]
+  ],
+  "_from": "node-ssdp-lite@latest",
+  "_id": "node-ssdp-lite@0.2.0",
+  "_inCache": true,
+  "_location": "/node-ssdp-lite",
+  "_npmUser": {
+    "name": "sweetpi",
+    "email": "oliverschneider89+sweetpi@gmail.com"
+  },
+  "_npmVersion": "1.3.24",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "node-ssdp-lite",
+    "scope": null,
+    "escapedName": "node-ssdp-lite",
+    "name": "node-ssdp-lite",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-ssdp-lite/-/node-ssdp-lite-0.2.0.tgz",
+  "_shasum": "7451ba6f165642acd6ff3ca1b11094f734b34eb9",
+  "_shrinkwrap": null,
+  "_spec": "node-ssdp-lite",
+  "_where": "C:\\Users\\busa\\node_modules",
+  "author": {
+    "name": "Nicholas Libby",
+    "email": "Xedecimal@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sweetpi/node-ssdp-lite/issues"
+  },
+  "dependencies": {},
+  "description": "A node.js SSDP client and server library.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "7451ba6f165642acd6ff3ca1b11094f734b34eb9",
+    "tarball": "https://registry.npmjs.org/node-ssdp-lite/-/node-ssdp-lite-0.2.0.tgz"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "homepage": "https://github.com/sweetpi/node-ssdp-lite",
+  "keywords": [
+    "ssdp",
+    "multicast",
+    "media",
+    "device",
+    "upnp"
+  ],
+  "main": "./index",
+  "maintainer": "Oliver Schneider <oliverschneider89+npm@gmail.com",
+  "maintainers": [
+    {
+      "name": "sweetpi",
+      "email": "oliverschneider89+sweetpi@gmail.com"
+    }
+  ],
+  "name": "node-ssdp-lite",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sweetpi/node-ssdp-lite.git"
+  },
+  "version": "0.2.0"
+}
