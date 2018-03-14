@@ -10,7 +10,7 @@ Instructions
 
 Step 1
 
-Enable the “Audio” device in “*/node_modules/neeo-sdk/lib/device/devicetype/Index.js” to be inline with the below
+Enable the “Audio” device in “*/node_modules/neeo-sdk/lib/device/validation/devicetype.js” to be inline with the below
 
 const TYPES = [
 
