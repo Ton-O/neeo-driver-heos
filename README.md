@@ -2,6 +2,8 @@
 
 
 This app Integrates Denon HEOS Speakers into the NEEO Universe. This is the first implementation of the Driver, thus likely to crash witout any reason or warnigns.
+# This is an extended version, based on the original work of busa.
+It adds a number of commands to the driver. 
 If you have any tips or tricks to bring this driver to a bether level, feel free to contact me.
 
 Please note that this is not an official NEEO app made by NEEO and there will be no support from NEEO concerning this App.
