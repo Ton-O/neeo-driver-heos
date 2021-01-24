@@ -43,7 +43,7 @@ function startSdkExample(brain) {
         neeoapi.startServer({
           brain,
           port: 6336,
-          name: 'simple-adapter-one',
+          name: 'DENON adapter AVC-X8500',
       	  devices: [heosDevice]
 
         })
