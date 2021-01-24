@@ -30,6 +30,12 @@ function heosCommands() {
 {neeo: 'STOP', heos:'heos://player/set_play_state?pid=player_id&state=stop\n'},
 {neeo: 'SKIP BACKWARD', heos:'heos://player/play_previous?pid=player_id\n'},
 {neeo: 'SKIP FORWARD', heos:'heos://player/play_next?pid=player_id\n'},
+
+{neeo: 'VOLUME LIGHT', heos:'heos://player/set_volume?pid=player_id&level=40\n'},
+{neeo: 'VOLUME MEDIUM', heos:'heos://player/set_volume?pid=player_id&level=30\n'},
+{neeo: 'VOLUME HEAVY', heos:'heos://player/set_volume?pid=player_id&level=20\n'},
+
+
 //Not mapped heosCommands
 {neeo: 'POWER ON', heos:'dummy1\n'},
 {neeo: 'POWER OFF', heos:'dummy2\n'},
@@ -37,7 +43,23 @@ function heosCommands() {
 {neeo: 'GET GROUPS', heos:'heos://group/get_groups\n'},
 {neeo: 'REGISTER CHANGE EVENTS', heos:'heos://system/register_for_change_events?enable=on\n'},
 {neeo: 'GET PLAYER PLAYING MEDIA', heos:'heos://player/get_now_playing_media?pid=player_id\n'},
-    ];
+
+{neeo: 'INFO GROUP', heos:'//group/get_group_info?gid=group_id\n'},
+{neeo: 'INFO SOURCE', heos:'//browse/get_source_info?sid=source_id\n'},
+{neeo: 'INFO PLAYER', heos:'//player/get_player_info?pid=player_id\n'},
+
+{neeo: 'INPUT AUX1', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/aux1\n'},
+{neeo: 'INPUT AUX2', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/aux2\n'},
+{neeo: 'INPUT BLURAY', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/bluray\n'},
+{neeo: 'INPUT CABLE/SAT', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/inputs/cable_sat\n'},
+{neeo: 'INPUT CD', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/cd\n'},
+{neeo: 'INPUT DVD', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/dvd\n'},
+{neeo: 'INPUT GAME', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/game\n'},
+{neeo: 'INPUT IPOD/USB', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/usbac\n'},
+{neeo: 'INPUT PHONO', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/phonoa\n'},
+{neeo: 'INPUT TV AUDIO', heos:'//browse/play_input?pid=destination_player_id&spid=source_player_id&input=inputs/tvaudio\n'},
+
+];
 }
 
 module.exports.heosDeviceButtonPressed = function heosDevicesButtonPressed(name, deviceid) {
